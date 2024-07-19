@@ -1,6 +1,8 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
+import "./text_grad.css";
+
 
 interface Step {
   title: string;
@@ -28,21 +30,27 @@ const steps: Step[] = [
 
 const HowItWorks: React.FC = () => {
   return (
-    <div className="bg-gradient-to-b from-purple-800 to-black text-white py-3 px-8 mb-3">
-      <h1 className="text-6xl font-bold text-center mb-2">It's pretty simple</h1>
-      <h2 className="text-5xl font-semibold text-center mb-20">
-        How it <span className="text-purple-400">works</span>
-      </h2>
-      
+    <div className="w-screen pt-16 mb-52">
+      <div >
+        <h1 className="text-6xl font-bold text-center mb-2">
+          It's pretty simple
+        </h1>
+        <h2 className="text-6xl font-semibold text-center mb-20">
+          How it <span className="gradient-text">works</span>
+        </h2>
+      </div>
+
       <div className="flex justify-between items-start relative max-w-6xl mx-auto">
         {steps.map((step, index) => (
           <React.Fragment key={index}>
-            <Step 
+            <Step
               icon={step.icon}
               title={step.title}
               description={step.description}
             />
-            {index < steps.length - 1 && <DottedLine isReverse={index % 2 !== 0} />}
+            {index < steps.length - 1 && (
+              <DottedLine isReverse={index % 2 !== 0} />
+            )}
           </React.Fragment>
         ))}
       </div>

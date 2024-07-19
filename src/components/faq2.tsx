@@ -38,7 +38,7 @@ const content: FAQItem[] = [
 
 const FAQ = () => {
   return (
-    <section className="flex justify-center items-center min-h-screen mb-0 mt-0">
+    <section className="flex justify-center items-center min-h-screen mb-36 mt-0">
       <div className="container bg-gray-900 text-gray-200 p-6 rounded-md">
         <h3 className="!mt-0 text-3xl justify-center text-gray-100">
           Frequently Asked Questions
