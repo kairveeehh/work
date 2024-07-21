@@ -1,11 +1,22 @@
 .gradient-background {
   background: 
-  /* radial-gradient(
-      circle at top,
-      #050519 -90%,
-      #a793ec 300%,
-      #050519 -90%
-    ), */
-    linear-gradient(180deg, #A47DE5 0%, #6d58bb 3%, #38208f 10%, #050519 22%, #010313 100%);
+    radial-gradient(
+      circle at top left,
+      #a793ec 25%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at top right,
+      #a793ec 25%,
+      transparent 50%
+    ),
+    linear-gradient(
+      180deg, 
+      #A47DE5 0%, 
+      #6d58bb 3%, 
+      #38208f 10%, 
+      #050519 22%, 
+      #010313 100%
+    );
   background-blend-mode: multiply;
 }

@@ -4,3 +4,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.circle-grad{
+    background: radial-gradient(circle at top, #a793ec, #634db5, #20145a, #050519, #010313);
+}
